@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Results" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ApplicationService.DTOs" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IResults_Get_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get" />
+  </wsdl:message>
+  <wsdl:message name="IResults_Get_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IResults_GetResults_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResults" />
+  </wsdl:message>
+  <wsdl:message name="IResults_GetResults_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IResults_GetResultsForAthleteById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultsForAthleteById" />
+  </wsdl:message>
+  <wsdl:message name="IResults_GetResultsForAthleteById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultsForAthleteByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IResults_GetResultsById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultsById" />
+  </wsdl:message>
+  <wsdl:message name="IResults_GetResultsById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultsByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IResults_UpdateResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResult" />
+  </wsdl:message>
+  <wsdl:message name="IResults_UpdateResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IResults_DeleteResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResult" />
+  </wsdl:message>
+  <wsdl:message name="IResults_DeleteResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IResults_PostResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostResult" />
+  </wsdl:message>
+  <wsdl:message name="IResults_PostResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IResults_GetResultsByEventName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultsByEventName" />
+  </wsdl:message>
+  <wsdl:message name="IResults_GetResultsByEventName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResultsByEventNameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IResults">
+    <wsdl:operation name="Get">
+      <wsdl:input wsaw:Action="http://tempuri.org/IResults/Get" message="tns:IResults_Get_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IResults/GetResponse" message="tns:IResults_Get_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResults">
+      <wsdl:input wsaw:Action="http://tempuri.org/IResults/GetResults" message="tns:IResults_GetResults_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IResults/GetResultsResponse" message="tns:IResults_GetResults_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResultsForAthleteById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IResults/GetResultsForAthleteById" message="tns:IResults_GetResultsForAthleteById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IResults/GetResultsForAthleteByIdResponse" message="tns:IResults_GetResultsForAthleteById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResultsById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IResults/GetResultsById" message="tns:IResults_GetResultsById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IResults/GetResultsByIdResponse" message="tns:IResults_GetResultsById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IResults/UpdateResult" message="tns:IResults_UpdateResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IResults/UpdateResultResponse" message="tns:IResults_UpdateResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IResults/DeleteResult" message="tns:IResults_DeleteResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IResults/DeleteResultResponse" message="tns:IResults_DeleteResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IResults/PostResult" message="tns:IResults_PostResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IResults/PostResultResponse" message="tns:IResults_PostResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResultsByEventName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IResults/GetResultsByEventName" message="tns:IResults_GetResultsByEventName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IResults/GetResultsByEventNameResponse" message="tns:IResults_GetResultsByEventName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IResults" type="tns:IResults">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get">
+      <soap:operation soapAction="http://tempuri.org/IResults/Get" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResults">
+      <soap:operation soapAction="http://tempuri.org/IResults/GetResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultsForAthleteById">
+      <soap:operation soapAction="http://tempuri.org/IResults/GetResultsForAthleteById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultsById">
+      <soap:operation soapAction="http://tempuri.org/IResults/GetResultsById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateResult">
+      <soap:operation soapAction="http://tempuri.org/IResults/UpdateResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteResult">
+      <soap:operation soapAction="http://tempuri.org/IResults/DeleteResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostResult">
+      <soap:operation soapAction="http://tempuri.org/IResults/PostResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResultsByEventName">
+      <soap:operation soapAction="http://tempuri.org/IResults/GetResultsByEventName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Results">
+    <wsdl:port name="BasicHttpBinding_IResults" binding="tns:BasicHttpBinding_IResults">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Olympedia/Results/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

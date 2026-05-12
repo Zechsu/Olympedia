@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Code\\Olympedia\\Olympedia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1F5C04D-5D11-4B5D-BD62-4CC7FBDA7B4D}|..\\Data\\Data.csproj|d:\\code\\olympedia\\data\\context\\olympediadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5D40A8B-3362-4704-A175-E98D028ED417}|Olympedia.csproj|d:\\code\\olympedia\\olympedia\\results.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D40A8B-3362-4704-A175-E98D028ED417}|Olympedia.csproj|solutionrelative:results.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5E5F40A-BDF2-4CE1-A6CD-9B289989D665}|..\\MVC\\MVC.csproj|d:\\code\\olympedia\\mvc\\views\\athlete\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5E5F40A-BDF2-4CE1-A6CD-9B289989D665}|..\\MVC\\MVC.csproj|D:\\Code\\Olympedia\\mvc\\views\\game\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5E5F40A-BDF2-4CE1-A6CD-9B289989D665}|..\\MVC\\MVC.csproj|D:\\Code\\Olympedia\\mvc\\views\\result\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5E5F40A-BDF2-4CE1-A6CD-9B289989D665}|..\\MVC\\MVC.csproj|D:\\Code\\Olympedia\\mvc\\controllers\\athletecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5E5F40A-BDF2-4CE1-A6CD-9B289989D665}|..\\MVC\\MVC.csproj|D:\\Code\\Olympedia\\mvc\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OlympediaDbContext.cs",
+              "DocumentMoniker": "D:\\Code\\Olympedia\\Data\\Context\\OlympediaDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Data\\Context\\OlympediaDbContext.cs",
+              "ToolTip": "D:\\Code\\Olympedia\\Data\\Context\\OlympediaDbContext.cs",
+              "RelativeToolTip": "..\\Data\\Context\\OlympediaDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:53:15.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Results.cs",
+              "DocumentMoniker": "D:\\Code\\Olympedia\\Olympedia\\Results.cs",
+              "RelativeDocumentMoniker": "Results.cs",
+              "ToolTip": "D:\\Code\\Olympedia\\Olympedia\\Results.cs",
+              "RelativeToolTip": "Results.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:53:06.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Code\\Olympedia\\MVC\\Views\\Game\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\MVC\\Views\\Game\\Index.cshtml",
+              "ToolTip": "D:\\Code\\Olympedia\\MVC\\Views\\Game\\Index.cshtml",
+              "RelativeToolTip": "..\\MVC\\Views\\Game\\Index.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAEEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2026-05-12T09:49:14.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AthleteController.cs",
+              "DocumentMoniker": "D:\\Code\\Olympedia\\MVC\\Controllers\\AthleteController.cs",
+              "RelativeDocumentMoniker": "..\\MVC\\Controllers\\AthleteController.cs",
+              "ToolTip": "D:\\Code\\Olympedia\\MVC\\Controllers\\AthleteController.cs",
+              "RelativeToolTip": "..\\MVC\\Controllers\\AthleteController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:49:14.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "D:\\Code\\Olympedia\\MVC\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "..\\MVC\\Controllers\\GameController.cs",
+              "ToolTip": "D:\\Code\\Olympedia\\MVC\\Controllers\\GameController.cs",
+              "RelativeToolTip": "..\\MVC\\Controllers\\GameController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T09:49:14.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Code\\Olympedia\\MVC\\Views\\Athlete\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\MVC\\Views\\Athlete\\Index.cshtml",
+              "ToolTip": "D:\\Code\\Olympedia\\MVC\\Views\\Athlete\\Index.cshtml",
+              "RelativeToolTip": "..\\MVC\\Views\\Athlete\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T09:49:15.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Code\\Olympedia\\MVC\\Views\\Result\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\MVC\\Views\\Result\\Index.cshtml",
+              "ToolTip": "D:\\Code\\Olympedia\\MVC\\Views\\Result\\Index.cshtml",
+              "RelativeToolTip": "..\\MVC\\Views\\Result\\Index.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAFgAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002242|",
+              "WhenOpened": "2026-05-12T09:49:15.646Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

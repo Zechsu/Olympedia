@@ -1,0 +1,65 @@
+﻿@model IEnumerable<MVC.ViewModels.ResultVM>
+
+<h3>Results</h3>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Game.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Position)
+        </th>
+        <th>
+            Medal
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Event)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Team)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Game.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Position)
+        </td>
+        @if (item.Position == 3)
+        {
+            <td style="color: #CD7F32">Bronze</td>
+        }
+        else if (item.Position == 2) {
+            <td style="color: #C0C0C0">Silver</td>
+        }
+        else if (item.Position == 1)
+        {
+            <td style="color: #FFD700">Gold</td>
+        }
+        else if (item.Position == 0)
+        {
+            <td>DNS</td>
+        }
+        else {
+            <td></td>
+        }
+        <td>
+            @Html.DisplayFor(modelItem => item.Event)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Team)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", "Result", new { id = item.Id }, null) |
+            @Html.ActionLink("Details", "Details", "Result", new { id = item.Id }, null) |
+            @Html.ActionLink("Delete", "Delete", "Result", new { id = item.Id }, null)
+        </td>
+    </tr>
+}
+
+</table>

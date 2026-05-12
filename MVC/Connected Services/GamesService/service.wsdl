@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Games" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ApplicationService.DTOs" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGames_GetGames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGames" />
+  </wsdl:message>
+  <wsdl:message name="IGames_GetGames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGamesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGames_PostGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostGame" />
+  </wsdl:message>
+  <wsdl:message name="IGames_PostGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGames_GetGameById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameById" />
+  </wsdl:message>
+  <wsdl:message name="IGames_GetGameById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGames_UpdateGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGame" />
+  </wsdl:message>
+  <wsdl:message name="IGames_UpdateGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGames_DeleteGame_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteGame" />
+  </wsdl:message>
+  <wsdl:message name="IGames_DeleteGame_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteGameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGames_GetGameByTitle_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameByTitle" />
+  </wsdl:message>
+  <wsdl:message name="IGames_GetGameByTitle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGameByTitleResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IGames">
+    <wsdl:operation name="GetGames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGames/GetGames" message="tns:IGames_GetGames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGames/GetGamesResponse" message="tns:IGames_GetGames_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGames/PostGame" message="tns:IGames_PostGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGames/PostGameResponse" message="tns:IGames_PostGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGameById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGames/GetGameById" message="tns:IGames_GetGameById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGames/GetGameByIdResponse" message="tns:IGames_GetGameById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGames/UpdateGame" message="tns:IGames_UpdateGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGames/UpdateGameResponse" message="tns:IGames_UpdateGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGame">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGames/DeleteGame" message="tns:IGames_DeleteGame_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGames/DeleteGameResponse" message="tns:IGames_DeleteGame_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGameByTitle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGames/GetGameByTitle" message="tns:IGames_GetGameByTitle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGames/GetGameByTitleResponse" message="tns:IGames_GetGameByTitle_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IGames" type="tns:IGames">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetGames">
+      <soap:operation soapAction="http://tempuri.org/IGames/GetGames" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostGame">
+      <soap:operation soapAction="http://tempuri.org/IGames/PostGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameById">
+      <soap:operation soapAction="http://tempuri.org/IGames/GetGameById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateGame">
+      <soap:operation soapAction="http://tempuri.org/IGames/UpdateGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteGame">
+      <soap:operation soapAction="http://tempuri.org/IGames/DeleteGame" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGameByTitle">
+      <soap:operation soapAction="http://tempuri.org/IGames/GetGameByTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Games">
+    <wsdl:port name="BasicHttpBinding_IGames" binding="tns:BasicHttpBinding_IGames">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Olympedia/Service2/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
